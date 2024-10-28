@@ -1,6 +1,11 @@
 @echo off
+goto installer
+:installer
 echo installing dependencies
-pip  install-r requirements.txt
-echo starting Discord-X-Lite!
-run Discord-X.exe
+pip install -r requirements.txt
+goto finished
+:finished
+cls
+echo All done you may run discord-x-lite!!!
+pause
 exit
